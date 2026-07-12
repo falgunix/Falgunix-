@@ -6,35 +6,72 @@
 <title>Falgunix</title>
 
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
-background:#07111F;
+}
+
+body{
+background:#0b1220;
 color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
 text-align:center;
+}
+
+header{
 padding:20px;
+background:#111827;
+font-size:28px;
+font-weight:bold;
 }
-h1{
-font-size:48px;
-margin-bottom:10px;
+
+.hero{
+padding:60px 20px;
 }
-p{
-font-size:20px;
-color:#cbd5e1;
+
+.hero h1{
+font-size:42px;
+margin-bottom:15px;
 }
-a{
+
+.hero p{
+font-size:18px;
+color:#d1d5db;
+margin-bottom:30px;
+}
+
+.btn{
 display:inline-block;
-margin-top:30px;
-padding:14px 30px;
-background:#1E88FF;
+padding:14px 28px;
+background:#2563eb;
 color:white;
 text-decoration:none;
 border-radius:8px;
 font-weight:bold;
+}
+
+.services{
+padding:40px 20px;
+}
+
+.services h2{
+margin-bottom:20px;
+}
+
+.card{
+background:#1f2937;
+margin:15px auto;
+padding:20px;
+border-radius:10px;
+max-width:320px;
+}
+
+footer{
+margin-top:40px;
+padding:20px;
+background:#111827;
+color:#9ca3af;
 }
 </style>
 
@@ -42,19 +79,47 @@ font-weight:bold;
 
 <body>
 
-<div>
+<header>
+Falgunix
+</header>
 
-<h1>Falgunix</h1>
+<section class="hero">
+<h1>Grow Your Business Online</h1>
 
 <p>
-Helping Local Businesses Grow with Google Business Profile & Local SEO.
+Google Business Profile, Local SEO, Website &
+Digital Growth Solutions.
 </p>
 
-<a href="mailto:hello.falgunix@gmail.com">
+<a class="btn" href="mailto:hello.falgunix@gmail.com">
 Contact Us
 </a>
+</section>
 
+<section class="services">
+<h2>Our Services</h2>
+
+<div class="card">
+📍 Google Business Profile Setup
 </div>
+
+<div class="card">
+🌐 Business Website
+</div>
+
+<div class="card">
+📈 Local SEO
+</div>
+
+<div class="card">
+📱 Social Media Setup
+</div>
+
+</section>
+
+<footer>
+© 2026 Falgunix. All Rights Reserved.
+</footer>
 
 </body>
 </html>
