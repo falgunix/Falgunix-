@@ -251,6 +251,27 @@ font-size:42px;
 font-size:18px;
 }
   }
+form{
+max-width:600px;
+margin:30px auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+form input,
+form textarea{
+padding:15px;
+border:none;
+border-radius:8px;
+font-size:16px;
+}
+
+form textarea{
+resize:vertical;
+min-height:120px;
+}
+  
 </style>
 
 </head>
@@ -358,6 +379,20 @@ Falgunix helps local businesses grow online with Google Business Profile, Profes
 <section id="contact">
 
 <h2>Contact Us</h2>
+
+  <form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Your Message" rows="5" required></textarea>
+
+<button class="btn" type="submit">
+Send Message
+</button>
+
+  </form>
 
 <p>📧 hello.falgunix@gmail.com</p>
 
