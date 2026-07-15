@@ -310,8 +310,13 @@ gap:15px;
 <body>
 
 <header>
+
 <div class="logo">Falgunix</div>
 
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav>
+...
 <nav>
 <a href="#">Home</a>
 <a href="#services">Services</a>
@@ -437,6 +442,10 @@ Email Us
 <footer>
 © 2026 Falgunix. All Rights Reserved.
 </footer>
-
+<script>
+function toggleMenu(){
+document.querySelector("nav").classList.toggle("active");
+}
+</script>
 </body>
 </html>
