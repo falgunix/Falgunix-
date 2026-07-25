@@ -224,26 +224,27 @@ text-decoration:none;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
 z-index:1000;
   }
-  .stats{
-display:flex;
-justify-content:center;
+ .stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
 gap:20px;
-flex-wrap:wrap;
 padding:50px 20px;
-}
+max-width:900px;
+margin:auto;
+ } 
 
 .stat{
 background:#1f2937;
-padding:20px;
+padding:25px;
 border-radius:12px;
-width:170px;
 transition:0.3s;
-}
+text-align:center;
+} 
 
 .stat:hover{
 transform:translateY(-8px);
 background:#2563eb;
-}
+} 
 
 .stat h2{
 font-size:32px;
