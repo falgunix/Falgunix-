@@ -1876,3 +1876,533 @@
       </div>
 
     </section>
+    <!-- ================= TRIAL CTA ================= -->
+
+    <section class="section trial-section">
+
+      <div class="container trial-box">
+
+        <div>
+
+          <p class="eyebrow">
+            LOW-FRICTION START
+          </p>
+
+          <h2>
+            Start with one SEO project.
+          </h2>
+
+          <p>
+            Trial projects can begin around $100 depending on scope.
+            Larger or recurring fulfillment is quoted after the requirements are clear.
+          </p>
+
+        </div>
+
+
+        <a
+          class="btn btn-light"
+          href="#contact"
+        >
+          Request a Trial Project ↗
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section
+      id="about"
+      class="section"
+    >
+
+      <div class="container narrow">
+
+        <div class="section-heading center">
+
+          <p class="eyebrow">
+            ABOUT FALGUNIX
+          </p>
+
+          <h2>
+            A focused SEO fulfillment partner for agencies.
+          </h2>
+
+          <p>
+            Falgunix is being built around one clear job:
+            help digital agencies extend their SEO delivery capacity
+            with structured, documented fulfillment.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section
+      id="contact"
+      class="section contact-section"
+    >
+
+      <div class="container contact-grid">
+
+
+        <div>
+
+          <p class="eyebrow">
+            START A PROJECT
+          </p>
+
+          <h2>
+            Have an SEO project for your agency?
+          </h2>
+
+          <p class="hero-text">
+            Tell us what you need.
+            We can start with a focused trial project
+            and define the exact scope before work begins.
+          </p>
+
+
+          <div class="contact-points">
+
+            <span>
+              ✓ Project-based start
+            </span>
+
+            <span>
+              ✓ White-label ready
+            </span>
+
+            <span>
+              ✓ Clear scope &amp; deliverables
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <form
+          class="contact-form"
+          id="project-form"
+        >
+
+
+          <label for="name">
+
+            Name
+
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              required
+            >
+
+          </label>
+
+
+          <label for="agency">
+
+            Agency
+
+            <input
+              id="agency"
+              name="agency"
+              type="text"
+              autocomplete="organization"
+              required
+            >
+
+          </label>
+
+
+          <label for="email">
+
+            Work email
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            >
+
+          </label>
+
+
+          <label for="project">
+
+            What do you need?
+
+            <select
+              id="project"
+              name="project"
+            >
+
+              <option>
+                SEO Audit
+              </option>
+
+              <option>
+                Technical SEO
+              </option>
+
+              <option>
+                Local SEO
+              </option>
+
+              <option>
+                E-commerce SEO
+              </option>
+
+              <option>
+                Keyword Research
+              </option>
+
+              <option>
+                Competitor Analysis
+              </option>
+
+              <option>
+                Other SEO Project
+              </option>
+
+            </select>
+
+          </label>
+
+
+          <label for="message">
+
+            Project details
+
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell us about the website, scope and deadline."
+            ></textarea>
+
+          </label>
+
+
+          <button
+            class="btn btn-primary"
+            type="submit"
+          >
+            Prepare Project Request ↗
+          </button>
+
+
+          <p class="form-note">
+            This demo form prepares your request locally.
+            We will connect the final submission channel during deployment.
+          </p>
+
+
+          <p
+            class="form-status"
+            id="form-status"
+            role="status"
+          ></p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-grid">
+
+
+      <div>
+
+        <a
+          class="brand"
+          href="#top"
+        >
+
+          <span class="brand-mark">
+            F
+          </span>
+
+          <span>
+            Falgunix
+          </span>
+
+        </a>
+
+
+        <p>
+          White-label SEO fulfillment for US digital marketing agencies.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <a href="#services">
+          Services
+        </a>
+
+        <a href="#process">
+          Process
+        </a>
+
+        <a href="#work">
+          Our Work
+        </a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+      <span>
+        © <span id="year"></span> Falgunix.
+        All rights reserved.
+      </span>
+
+      <span>
+        SEO fulfillment • US agencies
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script>
+
+
+    /* =========================================
+       MOBILE MENU
+       ========================================= */
+
+    const menuButton =
+      document.querySelector(".menu-toggle");
+
+    const nav =
+      document.querySelector(".site-nav");
+
+
+    if (menuButton && nav) {
+
+      menuButton.addEventListener(
+        "click",
+        () => {
+
+          const isOpen =
+            nav.classList.toggle("open");
+
+
+          menuButton.setAttribute(
+            "aria-expanded",
+            String(isOpen)
+          );
+
+
+          menuButton.setAttribute(
+            "aria-label",
+            isOpen
+              ? "Close navigation"
+              : "Open navigation"
+          );
+
+        }
+      );
+
+
+      nav
+        .querySelectorAll("a")
+        .forEach(
+          (link) => {
+
+            link.addEventListener(
+              "click",
+              () => {
+
+                nav.classList.remove(
+                  "open"
+                );
+
+
+                menuButton.setAttribute(
+                  "aria-expanded",
+                  "false"
+                );
+
+
+                menuButton.setAttribute(
+                  "aria-label",
+                  "Open navigation"
+                );
+
+              }
+            );
+
+          }
+        );
+
+    }
+
+
+    /* =========================================
+       CONTACT FORM
+       ========================================= */
+
+    const form =
+      document.querySelector(
+        "#project-form"
+      );
+
+
+    const status =
+      document.querySelector(
+        "#form-status"
+      );
+
+
+    if (form && status) {
+
+      form.addEventListener(
+        "submit",
+        (event) => {
+
+          event.preventDefault();
+
+
+          const data =
+            new FormData(form);
+
+
+          const request = [
+
+            "FALGUNIX PROJECT REQUEST",
+
+            "",
+
+            "Name: " +
+            String(
+              data.get("name") || ""
+            ).trim(),
+
+            "Agency: " +
+            String(
+              data.get("agency") || ""
+            ).trim(),
+
+            "Work email: " +
+            String(
+              data.get("email") || ""
+            ).trim(),
+
+            "Project: " +
+            String(
+              data.get("project") || ""
+            ).trim(),
+
+            "",
+
+            "Details:",
+
+            String(
+              data.get("message") || ""
+            ).trim() ||
+            "No additional details provided."
+
+          ].join("\n");
+
+
+          if (
+            navigator.clipboard &&
+            navigator.clipboard.writeText
+          ) {
+
+            navigator.clipboard
+              .writeText(request)
+
+              .then(
+                () => {
+
+                  status.textContent =
+                    "Project request copied. Paste it into your email or agency message.";
+
+                }
+              )
+
+              .catch(
+                () => {
+
+                  status.textContent =
+                    "Your request is ready. Copy the details and send them through your preferred channel.";
+
+                }
+              );
+
+          } else {
+
+            status.textContent =
+              "Your request is ready. Copy the details and send them through your preferred channel.";
+
+          }
+
+        }
+      );
+
+    }
+
+
+    /* =========================================
+       CURRENT YEAR
+       ========================================= */
+
+    const year =
+      document.querySelector(
+        "#year"
+      );
+
+
+    if (year) {
+
+      year.textContent =
+        new Date().getFullYear();
+
+    }
+
+  </script>
+
+
+</body>
+</html>
